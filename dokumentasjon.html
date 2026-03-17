@@ -233,67 +233,165 @@
         <a href="kontakt.html">Kontakt</a>
     </nav>
     <section>
-        <h2>Teknisk Dokumentasjon: Tilgang for Nye Ansatte</h2>
-        <p>Denne guiden beskriver prosessen for å få tilgang til AquaTeknologi AS sine systemer og ressurser som ny ansatt. Følg stegene nøye for å sikre sikker og effektiv onboarding.</p>
+        <h2>Teknisk Dokumentasjon</h2>
+        <p>Denne guiden beskriver AquaTeknologi AS sine IT-systemer, prosedyrer for ansatte og sikkerhetshensyn. Dokumentasjonen holdes løpende oppdatert og alle ansatte er ansvarlige for å følge retningslinjene.</p>
 
-        <h3>Forutsetninger</h3>
-        <p>Før du begynner, sørg for at du har følgende:</p>
+        <h3>Systemoversikt</h3>
+        <p>AquaTeknologi AS benytter en integrert IT-infrastruktur for å støtte havbruksoperasjoner og administrativ drift:</p>
         <ul>
-            <li>Ansettelseskontrakt signert og bekreftet av HR.</li>
-            <li>Gyldig ID (pass eller førerkort) for verifisering.</li>
-            <li>En arbeidsdatamaskin levert av IT-avdelingen.</li>
-            <li>Tilgang til bedriftens e-postsystem (vil bli satt opp i steg 1).</li>
-        </ul>
-
-        <h3>Steg 1: Kontoopprettelse</h3>
-        <ol>
-            <li>Kontakt IT-support på it-support@aquateknologi.no eller ring +47 123 45 678 for å starte kontoopprettelsesprosessen.</li>
-            <li>Oppgi nødvendig informasjon: fullt navn, ansattnummer (fra HR), ønsket brukernavn, og kontorsted (Trondheim eller Kristiansund).</li>
-            <li>IT-avdelingen vil opprette en Active Directory-konto og sende en midlertidig e-post med påloggingsdetaljer.</li>
-            <li>Logg inn på bedriftens nettverk ved første gangs pålogging for å endre passord.</li>
-        </ol>
-
-        <h3>Steg 2: Programvareinstallasjon</h3>
-        <p>Installér følgende programvare på arbeidsdatamaskinen din:</p>
-        <ul>
-            <li><strong>Microsoft Office 365:</strong> Last ned fra portal.office.com ved hjelp av bedriftens konto.</li>
-            <li><strong>VPN-klient:</strong> Bruk Cisco AnyConnect. Konfigurasjonsfilen sendes via e-post.</li>
-            <li><strong>Spesialisert programvare:</strong> AquaMonitor og DataAnalyzer – tilgang gis via IT etter kontoopprettelse.</li>
-            <li><strong>Sikkerhetsverktøy:</strong> Installer antivirus og endpoint protection som spesifisert i sikkerhetspolitikken.</li>
+            <li><strong>Active Directory (AD):</strong> Sentralisert brukerstyring for alle bedriftssystemer og ressurser.</li>
+            <li><strong>Intranett:</strong> Intern portal (intranet.aquateknologi.no) for dokumenter, policies og kommunikasjon.</li>
+            <li><strong>Prosjektverktøy:</strong> Jira (prosjekter) og Confluence (dokumentasjon) via Single Sign-On (SSO).</li>
+            <li><strong>AquaMonitor:</strong> Spesialisert programvare for overvåking av havbruksanlegg og fiskedata i sanntid.</li>
+            <li><strong>DataAnalyzer:</strong> Analyseplatform for statistikk og rapportgenerering fra havbruksdata.</li>
+            <li><strong>Havbruksdatabaser:</strong> Sentrale databaser med sensor- og driftsdata delt mellom Trondheim og Kristiansund.</li>
+            <li><strong>VPN (Cisco AnyConnect):</strong> Sikker tilgang til bedriftens nettverk fra eksterne lokasjoner.</li>
+            <li><strong>Microsoft 365:</strong> E-post, dokumentbehandling (OneDrive, SharePoint) og videokonferanser (Teams).</li>
         </ul>
         <div class="highlight">
-            <strong>Merk:</strong> Alle installasjoner må godkjennes av IT for å unngå sikkerhetsrisikoer.
+            <strong>Systemstatus:</strong> Opptime og vedlikehold kommuniseres via e-post og intranett. Kontakt IT-avdelingen for kritiske problemer.
         </div>
 
-        <h3>Steg 3: Tilgang til Systemer</h3>
+        <h3>Rutine for Opprettelse av Ny Bruker</h3>
+        <p>Denne prosessen sikrer at alle nye ansatte får riktig tilgang og opplæring.</p>
+        
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Før oppstart (HR-ansvar)</h4>
         <ol>
-            <li><strong>Intranett:</strong> Logg inn på intranet.aquateknologi.no med AD-kontoen din.</li>
-            <li><strong>Prosjektverktøy:</strong> Få tilgang til Jira og Confluence via SSO (Single Sign-On).</li>
-            <li><strong>Databaser:</strong> Tilgang til havbruksdatabaser gis basert på rolle. Kontakt leder for spesifikke rettigheter.</li>
-            <li><strong>Fjernarbeid:</strong> Sett opp VPN for tilgang til interne ressurser utenfor kontoret.</li>
+            <li>HR-avdelingen verifiserer ansettelseskontakt og samler informasjon: fullt navn, ansattnummer, rolle, avdeling, og valgt kontor (Trondheim/Kristiansund).</li>
+            <li>HR sender opprettelsesforespørsel til IT-avdelingen minst 3 dager før første arbeidsdag.</li>
         </ol>
 
-        <h3>Steg 4: Sikkerhetsprosedyrer</h3>
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Dag 1 (IT-ansvar)</h4>
+        <ol start="3">
+            <li>IT oppretter Active Directory-konto og sender midlertidig passord via sikker kanal.</li>
+            <li>IT oppretterer e-postkonto i Microsoft 365 og gjør brukeren tilgjengelig for Teams/SharePoint.</li>
+            <li>IT konfigurerer tilganger til Jira, Confluence og intranett basert på rolle.</li>
+            <li>Ny bruker mottar en velkomst-e-post med login-detaljer og onboarding-guide.</li>
+        </ol>
+
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Dag 1-2 (Leder-ansvar)</h4>
+        <ol start="7">
+            <li>Leder introduserer ny bruker til teamet og sikrer tilgang til relevante prosjekter.</li>
+            <li>Leder viser hvordan bruke AquaMonitor og DataAnalyzer.</li>
+            <li>Ny bruker mottar opplæring i sikkerhetspolicy og pålogger på sin arbeidsdatamaskin.</li>
+        </ol>
+
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Dag 2-3 (Læreperiode)</h4>
+        <ol start="10">
+            <li>IT installerer VPN-klient og annen nødvendig programvare.</li>
+            <li>Ny bruker deltar i obligatorisk sikkerhetsopplæring (video + quiz).</li>
+            <li>Ny bruker signerer sikkerhetserklæring og godtakelse av IT-policies.</li>
+        </ol>
+
+        <h3>Sikkerhetshensyn</h3>
+        <p>Sikkerhet er kritisk for å beskytte bedriftens data, kundeinformasjon og driftssystemer. Alle ansatte må følge disse retningslinjene:</p>
+
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Passordsikkerhet</h4>
         <ul>
-            <li>Bruk alltid to-faktor autentisering (2FA) på alle kontoer.</li>
-            <li>Ikke del passord eller tilgangskoder.</li>
-            <li>Rapporter mistenkelig aktivitet til sikkerhetsansvarlig umiddelbart.</li>
-            <li>Deltak i obligatorisk sikkerhetsopplæring innen første uke.</li>
+            <li>Passord må være minst 12 tegn langt og inneholde store bokstaver, små bokstaver, tall og spesialtegn.</li>
+            <li>Bytt passord hver 90. dag eller umiddelbart hvis forurensing mistenkes.</li>
+            <li>Del <strong>aldri</strong> passord via e-post eller chatte. IT vil aldri be om passord ditt.</li>
+            <li>Logg av når du forlater arbeidsstasjon, selv for korte pauser.</li>
         </ul>
 
-        <h3>Steg 5: Support og Feilsøking</h3>
-        <p>Hvis du støter på problemer:</p>
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Autentisering</h4>
         <ul>
-            <li>Sjekk FAQ på intranettet først.</li>
-            <li>Kontakt IT-support via e-post eller telefon.</li>
-            <li>For rolle-spesifikke spørsmål, kontakt din nærmeste leder.</li>
+            <li>Aktiver to-faktor autentisering (2FA) på alle kontoer, spesielt e-post og kritiske systemer.</li>
+            <li>Bruk Microsoft Authenticator eller liknende app (ikke SMS når mulig).</li>
+            <li>Lagre backup-koder på et sikkert sted eller i en passordbehandler.</li>
         </ul>
+
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Datatilgang</h4>
+        <ul>
+            <li>Kun tilgang til systemer og data som er nødvendig for din rolle (principle of least privilege).</li>
+            <li>Rapport ny eller uventet tilgang umiddelbart til sikkerhetsansvarlig.</li>
+            <li>Ved rollebytte: Sikkert fjern tilgang til gamle systemer før du får tilgang til nye.</li>
+        </ul>
+
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Fysisk sikkerhet</h4>
+        <ul>
+            <li>Låse PC når du forlater pulten. Bruk Windows + L-tastatur eller smart card.</li>
+            <li>Aldri la arbeidsmaskinen ubemannet i offentlige områder.</li>
+            <li>Oppbevar sensitiv dokumentasjon på låst sted.</li>
+            <li>Fjern USB-enheter, smartkort og andre enheter når du forlater kontoret.</li>
+        </ul>
+
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Nettfisking og Malware</h4>
+        <ul>
+            <li>Vær skeptisk til e-poster fra ukjente avsendere eller uventet meldinger fra kjente kontakter.</li>
+            <li>Klikk aldri på lenker eller last ned vedlegg fra mistenkelige kilder.</li>
+            <li>Rapporter mistenkt nettfisking til IT umiddelbar og slett e-posten.</li>
+            <li>Holdt antivirus og endpoint protection oppdatert (automatisk på bedriftsmaskiner).</li>
+        </ul>
+
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Rapportering av Sikkerhetsbrudd</h4>
+        <ul>
+            <li>Rapporter mistenkelig aktivitet umiddelbart til IT-sikkerhetsansvarlig eller IT-avdelingen.</li>
+            <li>Kontaktinfo: security@aquateknologi.no eller +47 123 45 678.</li>
+            <li>Gir beskrivelse av hva som skjedde, hvem som var involvert, og når det oppstod.</li>
+            <li>Alle rapporter behandles konfidensielt og undersøkes raskt.</li>
+        </ul>
+
         <div class="highlight">
-            <strong>Tips:</strong> Dokumenter eventuelle feil eller utfordringer for å forbedre prosessen for fremtidige ansatte.
+            <strong>Viktig:</strong> Brudd på sikkerhetspolitikken kan resultere i disiplinærtiltak eller oppsigelse.
         </div>
 
-        <h3>Kontaktinformasjon</h3>
-        <p>For spørsmål om denne dokumentasjonen, kontakt IT-avdelingen.</p>
+        <h3>Hvordan Holde Dokumentasjonen Oppdatert</h3>
+        <p>Dokumentasjonen påvirker sikkerheten, produktiviteten og kvaliteten i organisasjonen. Alle ansatte må delta i å holde den ajour:</p>
+
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Hvem Skal Oppdatere Dokumentasjonen?</h4>
+        <ul>
+            <li><strong>IT-avdelingen:</strong> Systemer, sikkerhetspolicier, nettfisking-rapporter og tekniske rutiner.</li>
+            <li><strong>HR-avdelingen:</strong> Ansettelsesprosesser, policies og retningslinjer.</li>
+            <li><strong>Dekantler/Ledere:</strong> Rolle-spesifikke prosedyrer og prosesser.</li>
+            <li><strong>Alle ansatte:</strong> Rapportere endringer eller manglene i dokumentasjonen.</li>
+        </ul>
+
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Når Skal Dokumentasjonen Oppdateres?</h4>
+        <ul>
+            <li>Når en ny prosess, system eller policy introduseres (innen 5 arbeidsdager).</li>
+            <li>Når eksisterende prosesser eller systemer endres vesentlig (innen 10 arbeidsdager).</li>
+            <li>Når en feil eller tvetydighet oppdages (innen 2 arbeidsdager).</li>
+            <li>Minst én gang per år gjennomgås all dokumentasjon og oppdateres ved behov.</li>
+        </ul>
+
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Hvordan Rapporteres Endringsbehov?</h4>
+        <ol>
+            <li>Gå til Confluence eller intranett og identifiser siden som trenger oppdatering.</li>
+            <li>Enten: (a) rediger direkte hvis du har skrivetilgang, eller (b) legg til en kommentar med "TRENGER OPPDATERING".</li>
+            <li>Kontakt relevant avdeling (IT, HR, leder) med beskrivelse av endringen.</li>
+            <li>Ansvarlig person gjennomgår og publiserer oppdateringen.</li>
+        </ol>
+
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Dokumentasjonsstandarder</h4>
+        <ul>
+            <li><strong>Språk:</strong> Norsk. Bruk enkelt og klart språk som alle kan forstå.</li>
+            <li><strong>Struktur:</strong> Bruk overskrifter, lister og hermetegn for lesbarhet.</li>
+            <li><strong>Datert:</strong> Hver side skal vise dato for siste oppdatering (øverst eller nederst på siden).</li>
+            <li><strong>Versjonering:</strong> For kritiske prosesser, vis versjonsnummer og endringsinformasjon.</li>
+            <li><strong>Bilder/Diagrammer:</strong> Bruk skjermdumper og diagrammer der det gjør dokumentasjonen klarere.</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>Eksempel på oppdatert side:</strong><br>
+            <em>Sist oppdatert: 17. mars 2026 av IT-avdelingen<br>
+            Versjon: 2.1 - Lagt til sikkerhet for AquaMonitor 3.0</em>
+        </div>
+
+        <h4 style="color: #0056b3; margin-top: 1.5rem;">Kvalitetskontroll</h4>
+        <ul>
+            <li>Dokumentasjon må være faktisk korrekt og reflektere gjeldende praksis.</li>
+            <li>Ledere gjennomgår dokumentasjon innen sitt område minst hver 6. måned.</li>
+            <li>Nye ansatte gis tilbakemelding på dokumentasjon som er uklart eller forvirrende.</li>
+            <li>Feil eller tvetydigheter prioriteres høyt og fikses umiddelbart.</li>
+        </ul>
+
+        <h3>Rask Kontakt</h3>
+        <p><strong>IT-support:</strong> it-support@aquateknologi.no | +47 123 45 678<br>
+        <strong>Sikkerhet:</strong> security@aquateknologi.no<br>
+        <strong>HR:</strong> hr@aquateknologi.no<br>
+        <strong>Intranett:</strong> intranet.aquateknologi.no</p>
+
     </section>
     <footer>
         <div class="footer-content">
